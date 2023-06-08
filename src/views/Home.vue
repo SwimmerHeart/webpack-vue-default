@@ -8,7 +8,7 @@
 </template>
 
 <script>
-import VTitle from "../components/v-title";
+import VTitle from "@/components/v-title";
 export default {
   name: "Home",
   components: {

@@ -1,6 +1,5 @@
 const path = require('path')
 const HtmlWebpackPlugin = require('html-webpack-plugin')
-const CopyWebpackPlugin = require('copy-webpack-plugin')
 const {VueLoaderPlugin} = require("vue-loader");
 
 module.exports = {
@@ -19,7 +18,8 @@ module.exports = {
     resolve: {
         alias: {
             '@': path.resolve(__dirname, 'src'),
-        }
+        },
+        extensions: ['.js', '.vue', '.json']
     },
     module: {
         rules: [
